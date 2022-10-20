@@ -1,0 +1,71 @@
+Algorithm : Заправить кровать
+
+base class bed 
+class Blanket
+class Bedsheet
+class Pillow
+
+
+class clean
+{
+   public method remove 
+   public method put
+   public method edit
+   public method up
+}
+
+
+//1. Убрать подушку
+class Pillow 
+{
+public method removePillow()
+}
+
+//2. Убрать одеяло;
+class Blanket
+{
+public method removePillow()
+}
+
+//3. Подправить простыню
+class Bedsheet
+{
+public method Bedsheet editBedsheet
+     if (Bedsheet == crumpled)
+        {
+             Bedsheet.editBedsheet
+        }
+     else 
+        {
+             Bedsheet.NothingToDo
+        }
+}
+//4. Поднять && заправить одеяло
+class Blanket
+{
+     public method upBlanket()
+     public method putBlanket()
+}
+//5. Поднять подушку 
+class Pillow 
+{
+     public method upPillow
+}
+
+
+base class bed 
+class Blanket
+class Bedsheet
+class Pillow
+
+
+class clean
+{
+   public method remove 
+   public method put
+   public method edit
+   public method up
+}
+
+
+
