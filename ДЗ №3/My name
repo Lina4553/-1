@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args)
+    {
+        String Name = "Elina";
+        String Surname = "Akherova";
+        String Fathername = "Maratovna";
+        String DateofBirth = "21 february";
+        System.out.println("My name is "+ Name + " " + Surname);
+        System.out.println("Date of birth: " + DateofBirth);
+
+
+
+
+    }
+}
