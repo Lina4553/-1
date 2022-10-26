@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args)
+    {
+        // переменные с урока №3
+        byte a = 50;
+        short b = 30000;
+        int c = 154251;
+        long d = 524;
+        float e = 478;
+        double f = 154.45;
+        boolean g = true ;
+        char h = 'w';
+        System.out.println(a + " " + b + " " + c + " " + d + " " + e + " " + f + " " + g + " " + h);
+
+
+    }
+}
