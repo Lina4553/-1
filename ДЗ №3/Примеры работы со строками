@@ -1,0 +1,54 @@
+public class Main {
+    public static void main(String[] args)
+    {
+ //работа со строкой
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите имя: ");
+        String s1;
+        s1 = scanner.nextLine();
+        String myString = "Привет ";
+        String s1InUpperCase = s1.toUpperCase();
+        System.out.println(myString+' '+s1InUpperCase);
+
+        Scanner scannerSt = new Scanner(System.in);
+        System.out.print("Введите название улицы: ");
+        String st;
+        st = scanner.nextLine();
+        System.out.println("Я живу на улице "+st);
+
+        Scanner scannerAge = new Scanner(System.in);
+        System.out.print("Введите ваш возраст: ");
+        int Age;
+        Age = scanner.nextInt();
+        if (Age <18) { System.out.print("Вы еще несовершеннолетный"); }
+        else {System.out.print("Вы уже совершеннолетный ");
+        };
+
+        
+//работа с числами
+        Scanner scanner1 = new Scanner(System.in);
+        System.out.print("Введите целое значение: ");
+        int s2;
+        s2 = scanner1.nextInt();
+        Scanner scanner2 = new Scanner(System.in);
+        System.out.print("Введите еще одно значение: ");
+        int s3;
+        s3 = scanner2.nextInt();
+        System.out.println("a=" + s2 + "; b="+ s3);
+        if (s2<s3)
+               {
+                   System.out.println("a меньше b");
+               }
+        else if (s2>s3) {
+                        System.out.println("a больше b");
+                        }
+        else { System.out.println("a равно b"); }
+        int c = s2 - s3;
+        System.out.println("a-b=" + c);
+        int d = s2 + s3;
+        System.out.println("a+b=" + d);
+
+
+
+    }
+}
