@@ -20,8 +20,8 @@ public class Main {
         System.out.print("Введите ваш возраст: ");
         int Age;
         Age = scanner.nextInt();
-        if (Age <18) { System.out.print("Вы еще несовершеннолетный"); }
-        else {System.out.print("Вы уже совершеннолетный ");
+        if (Age <18) { System.out.println("Вы еще несовершеннолетный"); }
+        else {System.out.println("Вы уже совершеннолетный ");
         };
 
         
