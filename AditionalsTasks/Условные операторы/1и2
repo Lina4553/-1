@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+//1. Пользователь вводит в консоли число. Если оно больше 10, выдаем в консоли сообщение
+//        “Число больше десяти”, если меньше – “Число меньше десяти”
+
+public class Main {
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите целое значение: ");
+        int x;
+        x = scanner.nextInt();
+        if (x > 10) {
+            System.out.println("Число больше 10");
+        } else if (x == 10) {
+            System.out.println("Число равно 10");
+        } else {
+            System.out.println("Число меньше 10");
+
+    }
+}
+
+
+//2. Пользователь вводит в консоли два числа, выводим сообщение “первое число
+//больше/меньше, чем второе” в зависимости от результата их сравнения 
+  Scanner scannerA = new Scanner(System.in);
+        System.out.print("Введите целое значение: ");
+        int a;
+        a = scannerA.nextInt();
+        Scanner scannerB = new Scanner(System.in);
+        System.out.print("Введите еще одно значение: ");
+        int b;
+        b = scannerB.nextInt();
+        if (a<b)
+               {
+                   System.out.println("a меньше b");
+               }
+        else if (a>b) {
+                        System.out.println("a больше b");
+                        }
+        else { System.out.println("a равно b"); }
+        
