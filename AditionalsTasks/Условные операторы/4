@@ -1,0 +1,44 @@
+//Пользователь вводит в консоли четыре числа. Рассчитываем и выводим в консоль 
+//количество отрицательных и положительных чисел
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args)
+    {
+        Scanner tr = new Scanner(System.in);
+        System.out.println("Введите 4 числа ");
+        int zero = 0;
+        int pl = 0;
+        int mi = 0;
+        for(int i = 4; i > 0; i--) {
+            System.out.println("Число: ");
+            int ch = tr.nextInt();
+            if (ch == 0) {zero++;}
+            else if (ch >0 ) {pl++;}
+            else {mi++;};
+                                   }
+        System.out.println("положительных чисел " +pl);
+        System.out.println("отрицательных чисел " +mi);
+        System.out.println("Содержит нули " +zero);
+        
+        
+        
+       // 5.Пользователь вводит в консоли три числа, выводим самое большое из них. 
+       
+       Scanner chislo = new Scanner(System.in);
+        System.out.println("Введите 3 числа ");
+        int a = 0;
+        for (int i=3; i>0; i--)
+                {
+                    System.out.println("Число: ");
+                    int chi = chislo.nextInt();
+                    if (chi>a) {a=chi;}
+                }
+        System.out.println("Самое большое число: " +a);
+
+       
+       
+      }
+
+
+}
