@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args)
+    {
+        String str = new String();
+        Scanner scanner = new Scanner(System.in);
+        String a =new String("Exit");
+
+        while (!str.equalsIgnoreCase(a)) {
+           System.out.print("Пожалуйста введите что нибудь ");
+           str = scanner.nextLine();
+        }
+
+
+    }
+
+
+}
