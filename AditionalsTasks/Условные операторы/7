@@ -1,0 +1,16 @@
+//Пользователь вводит в консоли число. Выводим сообщение о том, четное число, или 
+//нечетное 
+public class Main {
+    public static void main(String[] args) {
+        Scanner chislo = new Scanner(System.in);
+        System.out.println("Введите число ");
+        int ch = chislo.nextInt();
+        if (ch == 0) {System.out.println("Вы ввели число, которое не делится на 2");}
+        else if (ch%2==0) {System.out.println(ch +" это четное число");}
+        else {System.out.println(ch +" Нечетное число");}
+
+
+
+
+    }
+}
