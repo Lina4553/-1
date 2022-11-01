@@ -1,0 +1,24 @@
+//Пользователь вводит в консоли три числа. Рассчитываем и выводим в консоль сумму 
+//наибольшего и наименьшего из них 
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner chislo = new Scanner(System.in);
+        System.out.println("Введите 3 числа ");
+        int max = 0;
+        int a = chislo.nextInt();
+        int b = chislo.nextInt();
+        int c = chislo.nextInt();
+        if (a>b && a>c && c>b) { max=a+b;}
+       else if (a>b && a>c && b>c) {max=a+c;}
+       else if (b>a && b>c && c>a) {max=b+a;}
+       else if (b>a && b>c && a>c) {max=b+c;}
+       else if (c>a && c>b && b>a)  {max=c+a;}
+       else {max=c+b;}
+
+
+
+        System.out.println(max);
+
+    }
+}
