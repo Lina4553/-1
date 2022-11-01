@@ -1,0 +1,19 @@
+//Доработайте пример с øиклом for (слайд 36) - обработайте ситуаøиĀ с
+//вводом отриøателþного ùисла
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please enter a number: ");
+        int x = scanner.nextInt();
+        if (x<0) {x=x*(-1);};
+        int sum = 0;
+        for (int i = 0; i <= x; i++) {
+            sum += i;
+        }
+        System.out.printf("The sum of all numbers from 0 to %d is %d", x, sum);
+
+
+    }
+
+
+}
