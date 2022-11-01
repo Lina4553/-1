@@ -35,7 +35,6 @@ public class Main {
                     if (chi>a) {a=chi;}
                 }
         System.out.println("Самое большое число: " +a);
-
        
        
       }
