@@ -1,0 +1,55 @@
+//Программа “Магазин”, выводим меню из трех товаров с ценами. Пользователь выбирает 
+//товар, вводит сумму денег. Если сумма меньше цены, выводим сообщение: “Денег не 
+//хватает!”, если сумма равна цене – “Спасибо за покупку!”, если больше – “Ваша сдача: 
+//[сумма сдачи]”
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner tovar = new Scanner(System.in);
+        int milk = 56;
+        int meat = 100;
+        int water = 16;
+        System.out.println("Молоко: "+milk+"руб");
+        System.out.println("Мясо: "+meat+"руб");
+        System.out.println("Вода: "+water+"руб");
+        System.out.println("Выберите товар:");
+        int to = tovar.nextInt();
+        while ((to >3)||(to<1))
+            {System.out.println("Выбрали неверное значение, нужно перевыбрать:");
+              to=tovar.nextInt();}
+
+
+        System.out.println("Внесите наличные");
+        int cash= tovar.nextInt();
+        switch (to)
+           {
+               case 1: if (cash>milk) {
+
+                   System.out.println("Ваша сдача: "+ (cash-milk));
+                                    }
+                   else if (cash<milk) {System.out.println("Не хватает средств");}
+                   else {System.out.println("Сдачи нет");}
+                   break;
+               case 5: if (cash>meat) {
+                   System.out.println("Ваша сдача: "+(cash-meat));
+                                      }
+                   else if (cash<meat) {System.out.println("Не хватает средств");}
+                   else {System.out.println("Сдачи нет");}
+                   break;
+               case 3: if (cash>water) {
+                   System.out.println("Ваша сдача: "+(cash-water));
+                                        }
+                   else if (cash<water) {System.out.println("Не хватает средств");}
+                   else {System.out.println("Сдачи нет");}
+                   break;
+               default:
+                   System.out.println("Чтото пошло не так");
+                   break;
+
+           }
+
+
+
+    }
+}
