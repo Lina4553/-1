@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int channel = -1;
+        String[] Channels = new String[]{" ", "Первый канал", "Матч ТВ", "НТВ","Рен тв", "Пятый канал"};
+        while (channel != 0) {
+            System.out.println("Введите номер канала");
+            channel = sc.nextInt();
+            if ((channel > 5) | (channel < 0)) {
+                System.out.println("У нас всего 5 каналов");
+                channel = sc.nextInt();
+            }
+            System.out.println(Channels[channel]);
+        }
+
+    }
+}
