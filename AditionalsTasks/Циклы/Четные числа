@@ -1,0 +1,19 @@
+Пользователь вводит число - х. Выводим в консоль все четные числа от нуля до х
+public class Main {
+    public static void main(String[] args)
+    {
+        Scanner chislo = new Scanner(System.in);
+        System.out.println("Введите число");
+        int a = chislo.nextInt();
+        if ((a<2)) {System.out.println("Введено неверное значение, введите значение больше 1");
+            a = chislo.nextInt();
+                 }
+
+        for (int i=1; i<=a; i++)
+        {
+            if (i%2==0)
+               { System.out.println("Четные числа:" + i); }
+        }
+
+    }
+}
