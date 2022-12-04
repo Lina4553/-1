@@ -1,0 +1,40 @@
+//С помоûþĀ оператора switch и øиклов реализуйте программу, котораā:
+//вýводит менĀ:
+//○ 1. Ввести имā
+//○ 2. Ввести фамилиĀ
+//○ 3. Ввести год рождениā
+//○ 4. Вýвести информаøиĀ
+//○ 0. Вýход
+//Полþзователþ вводит в консоли номер пункта менĀ.
+//Первýе три пункта принимаĀт соответствуĀûие знаùениā в консоли. Вýзов
+//етвертого пункта вýводит в консолþ своднуĀ информаøиĀ: “Имā: введенное
+//имā, Фамилиā: введеннаā фамилиā, г.р.: введеннýй год”
+//При вýзове нулевого пункта программа заверúает работу.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        String name = "name";
+        String surname ="surname";
+        int age = 0;
+        int x = 0;
+        int info;
+        System.out.println(" 1. Ввести имя\n 2. Ввести фамилию\n 3. Ввести год рождения\n 4. Вывести информацию\n 0. Выход");
+        while (x != 1) {
+
+            info = Integer.parseInt(sc.next());
+
+            switch (info) {
+                case (1) -> name = sc.next();
+                case (2) -> surname = sc.next();
+                case (3) -> age = sc.nextInt();
+                case (4) -> System.out.println(name + "\n" + surname + "\n" + age);
+                case (0) -> x = 1;
+                default -> System.out.println("wrong");
+            }
+        }
+
+    }
+}
